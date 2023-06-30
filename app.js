@@ -1,9 +1,11 @@
 const readline = require (`readline-sync`);
 const {generarNumeroAleatorio, verificacionAdivinanza} = require (`./adivinanza`);
 
+//Obtenemos el numero del usuario.
 const obtenerNumeroUsuario = () => {
     return readline.question('Ingresa un numero: ')};
 
+//Función que se encarga de ejecutar el juego.    
 let juegoAdivinanza = () => {
     const numeroSecreto = generarNumeroAleatorio();
     let numeroAdivinado = 0;
